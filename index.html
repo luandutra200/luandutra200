@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Calculadora</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("imagens/dicas-de-finan+ºas.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<script type="text/javascript">
+ 
+        function somarValores(){
+        var Valor1 = document.getElementById("s1").value;
+        var Valor2 = document.getElementById("s2").value;
+        var Valor3 = document.getElementById("s3").value;
+        var Valor4 = document.getElementById("s4").value;
+        var Valor5 = ('1');
+        var Valor6 = parseInt(Valor4) / ('100');
+        var calcular = parseFloat(Valor1) *Math.pow((parseFloat(Valor5) + parseFloat(Valor3)),parseFloat(Valor6)) + parseFloat(Valor2) * (Math.pow((parseFloat(Valor5) + parseFloat(Valor3)),parseFloat(Valor6)) - parseFloat(Valor5)) / parseFloat(Valor3);
+        alert('Seu lucro em  '+Valor4+' meses sera R$: '+calcular.toFixed('2')+". "+' clique em OK para Sair');
+        return false;
+    }
+</script>
+<body>
+
+<right-floated links on small screens and replace them with a menu icon -->
+
+   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Header with full-height image -->
+
+</header>
+<!-- Calculadora -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="calculator">
+  <h3 class="w3-center">Calculadora de Juros Compostos</h3>
+  <p class="w3-center w3-large"></mark></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      
+            <form action="/action_page.php" target="_blank">
+          <form name="form1" action="#" method="post">
+  <!-- criação do form1 -->
+      Valor inicial:
+      <input id="s1"  type="text"> Reais<br /><br />
+      Valor mensal:
+      <input id="s2" type="text" > Reais<br /><br />
+      taxa de juros:
+      <input id="s3" type="text" > % <br /><br />
+      Período em:
+      <input id="s4" type="text" > meses<br /><br />
+          <button id="somar" onclick="somarValores()">Calcular</button><br>
+          <br /><br />
+          </button>
+        </p>
+      </form>
+ 
+ 
+      
+
+<!-- Footer -->
+
+
+</body>
+</html>
